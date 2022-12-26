@@ -23,7 +23,7 @@ namespace TrackerLibrary
                     break;
                 case DatabaseType.TextFile:
                     // Todo - Set up the text connector properly.
-                    TextConnection text = new TextConnection();
+                    TextConnector text = new TextConnector();
                     Connection = text;
                     break;
                 default:
