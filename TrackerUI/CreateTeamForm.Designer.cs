@@ -232,6 +232,7 @@
             this.teamMembersListBox.Name = "teamMembersListBox";
             this.teamMembersListBox.Size = new System.Drawing.Size(309, 572);
             this.teamMembersListBox.TabIndex = 21;
+            this.teamMembersListBox.SelectedIndexChanged += new System.EventHandler(this.teamMembersListBox_SelectedIndexChanged);
             // 
             // removeSelectedMemberButton
             // 
@@ -247,6 +248,7 @@
             this.removeSelectedMemberButton.TabIndex = 22;
             this.removeSelectedMemberButton.Text = "Remove Selected";
             this.removeSelectedMemberButton.UseVisualStyleBackColor = true;
+            this.removeSelectedMemberButton.Click += new System.EventHandler(this.removeSelectedMemberButton_Click);
             // 
             // createTeamButton
             // 
