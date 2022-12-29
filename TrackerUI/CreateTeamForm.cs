@@ -140,7 +140,19 @@ namespace TrackerUI
 
         private void teamMembersListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void createTeamButton_Click(object sender, EventArgs e)
+        {
+            TeamModel t = new TeamModel();
+
+            t.TeamName = TeamNameValue.Text;
+            t.TeamMembers = selectedTeamMembers;
+
+            GlobalConfig.Connection.CreateTeam(t);
+
+            // Todo - If we aren't closing this form after creation, reset the form
         }
     }
 }
