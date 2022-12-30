@@ -81,7 +81,7 @@ namespace TrackerUI
             }
             else
             {
-                MessageBox.Show("You need to fill in all of the field.");
+                MessageBox.Show("You need to fill in all of the fields.");
             }
 
         }
